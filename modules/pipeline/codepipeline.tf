@@ -18,7 +18,7 @@ resource "aws_codepipeline" "pipeline" {
       version          = "1"
       output_artifacts = ["source"]
 
-      configuration {
+      configuration = {
         Owner  = "${var.git_repository_owner}"
         Repo   = "${var.git_repository_name}"
         Branch = "${var.git_repository_branch}"
@@ -37,7 +37,7 @@ resource "aws_codepipeline" "pipeline" {
       version          = "1"
       input_artifacts  = ["source"]
 
-      configuration {
+      configuration = {
         ProjectName = "${var.app_name}-codebuild"
       }
     }
