@@ -15,13 +15,13 @@ variable "app_name" {
 # Github Repository Owner
 variable "git_repository_owner" {
   description = "Github Repository Owner"
-  default     = "msfidelis"
+  default     = "pareshv74"
 }
 
 # Github Repository Project Name
 variable "git_repository_name" {
   description = "Project name on Github"
-  default     = "serverless-architecture-boilerplate"
+  default     = "serverless-pipeline"
 }
 
 # Default Branch
@@ -33,5 +33,5 @@ variable "git_repository_branch" {
 # Customize your AWS Region
 variable "aws_region" {
   description = "AWS Region for the VPC"
-  default     = "us-east-1"
+  default     = "ap-south-1"
 }
