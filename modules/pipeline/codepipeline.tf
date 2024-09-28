@@ -14,7 +14,7 @@ resource "aws_codepipeline" "pipeline" {
       name             = "Source"
       category         = "Source"
       owner            = "ThirdParty"
-      provider         = "GitHub"
+      #provider         = "GitHub"
       version          = "1"
       output_artifacts = ["source"]
 
