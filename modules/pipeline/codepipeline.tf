@@ -23,7 +23,7 @@ resource "aws_codepipeline" "pipeline" {
         Repo   = "${var.git_repository_name}"
         Branch = "${var.git_repository_branch}"
         "OAuthToken": {
-          "Fn::Sub": "{{resolve:secretsmanager:serverless:SecretString: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}}"
+          "Fn::Sub": "{{resolve:secretsmanager:serverless:SecretString:}}"
         }
       }
     }
