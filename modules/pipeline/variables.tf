@@ -3,21 +3,21 @@ variable "app_name" {
 }
 
 variable "git_repository_owner" {
-  description = "Owner from Repository"
+  description = "pareshv74/serverless-pipeline"
 }
 
 variable "git_repository_name" {
-  description = "Name of repository"
+  description = "pareshv74/serverless-pipeline"
 }
 
 variable "git_repository_branch" {
-  description = "Build branch aka Master"
+  description = "Master"
 }
 
 variable "region" {
-  description = "The region to use"
+  description = "ap-south-1"
 }
 
 variable "account_id" {
-  description = "Account ID"
+  description = "008971660212"
 }
