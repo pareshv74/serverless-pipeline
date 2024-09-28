@@ -16,7 +16,7 @@ resource "aws_codepipeline" "pipeline" {
       owner            = "ThirdParty"
       provider         = "GitHub"
       version          = "1"
-      output_artifacts = ["source"]
+      output_artifacts = ["SourceOutput"]
 
       configuration = {
         Owner  = "${var.git_repository_owner}"
