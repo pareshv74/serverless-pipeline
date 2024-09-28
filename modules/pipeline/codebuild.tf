@@ -12,7 +12,7 @@ resource "aws_codebuild_project" "app_build" {
 
   service_role = "${aws_iam_role.codebuild_role.arn}"
 
-  artifacts = {
+  artifacts {
     type = "CODEPIPELINE"
   }
 
@@ -25,7 +25,7 @@ resource "aws_codebuild_project" "app_build" {
     privileged_mode = true
   }
 
-  source = {
+  source {
     type      = "CODEPIPELINE"
     buildspec = "${data.template_file.buildspec.rendered}"
   }
