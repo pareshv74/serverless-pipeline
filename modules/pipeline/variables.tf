@@ -3,11 +3,11 @@ variable "app_name" {
 }
 
 variable "git_repository_owner" {
-  description = "pareshv74/serverless-pipeline"
+  description = "pareshv74"
 }
 
 variable "git_repository_name" {
-  description = "pareshv74/serverless-pipeline"
+  description = "serverless-pipeline"
 }
 
 variable "git_repository_branch" {
